@@ -14,7 +14,13 @@ function handleClick(event) {
   if (handleMove(position)) {
 
     setTimeout(() => {
-      alert('o jogo acabou');
+     if(board[position] == 'o'){
+       const message = `O jogo acabou! O Jogador: ${playerTime +1} \⚙ ganhou`;
+        alert(message);
+     } else{
+       const message = `O jogo acabou! O Jogador: ${playerTime+1} \🛠 ganhou`;
+        alert(message);
+     }
     }, 10);
   }
 
