@@ -22,10 +22,9 @@ function handleClick(event) {
 }
 
 function reset() {
-  // board = ["", "", "", "", "", "", "", "", ""];
+  updateSquaresReset();
   playerTime = 0;
   gameOver = false;
-  updateSquaresReset();
 }
 
 function updateSquaresReset() {
@@ -34,9 +33,10 @@ function updateSquaresReset() {
   squares.forEach((square) => {
     let position = square.id;
     let symbol = board[position];
-    console.log(symbol)
+    // console.log(symbol)
     if (symbol != '') {
-      square.innerHTML = `<div></div>`;
+      square.innerHTML = '';
+      board[position]='';
     }
   })
 }

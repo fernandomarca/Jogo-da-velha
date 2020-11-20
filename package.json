@@ -1,0 +1,11 @@
+{
+  "name": "Jogo-da-velha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fernandomarca/Jogo-da-velha.git",
+  "author": "fernandomarca <fernandomarca@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

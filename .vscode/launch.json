@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+      {
+          "name": "Attach to url with files",
+          "type": "chrome",
+          "userDataDir": true,
+          "request": "attach",
+          "port": 9222,
+          "url": "http://127.0.0.1:5500/index.html",
+          "webRoot": "${workspaceFolder}/"
+      }
+  ]
+}
+
+//google-chrome --remote-debugging-port=9222

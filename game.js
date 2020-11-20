@@ -23,7 +23,7 @@ function handleMove(position) {
     return;
   }
 
-  if (!board[position]) {
+  if (board[position] === '') {
     board[position] = symbols[playerTime];
 
     gameOver = isWin();
